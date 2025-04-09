@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th,td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<bod>
+    <video width="320" height="240" controls autoplay muted loop>
+        <source src="sss.mp4" type="video/mp4"></video>
+        Your browser does not support the video tag.
+    <audio controls><source src="nhac.mp3" type="audio/mpeg"></audio>
+    <table>
+        <thead>
+            <tr>
+                <td>Thang</td>
+                <td>Tuần</td>
+                <td>Năm</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">Chú thích bảng</td></tr></tfoot>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <td><b>Hàng 0 cột 1</b></td>
+                <td><b>Hàng 0 cột 2</b></td>
+                <td><b>Hàng 0 cột 3</b></td>
+                <td><b>Hàng 0 cột 4</b></td>
+                <td><b>Hàng 0 cột 5</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hàng 1 cột 1</td>
+                <td rowspan="4">Hàng 1 cột 2</td>
+                <td rowspan="3">Hàng 1 cột 3</td>
+                <td>Hàng 1 cột 4</td>
+                <td>Hàng 1 cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 2 cột 4</td>
+                <td>Hàng 2 cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 3 cột 4</td>
+                <td>Hàng 3 cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 4 cột 3</td>
+                <td>Hàng 4 cột 4</td>
+                <td>Hàng 4 cột 5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Hàng 5 cột 2</td>
+                <td rowspan="2">Hàng 5 cột 3</td>
+                <td>Hàng 5 cột 4</td>
+                <td>Hàng 5 cột 5</td>
+            </tr>
+            <tr>
+                <td>Hàng 6 cột 4</td>
+                <td>Hàng 6 cột 5</td>
+            </tr>
+        </tbody>
+    </table>
+  
+</body>
+</html>
+<!--Thẻ video là thẻ để nhúng video vào trang web trong thẻ video có thẻ <source> để chứa đường dẫn file video
+Thuộc tính thẻ video
+-width/height: chiều rộng và chiều cao video
+-controls:Thanh điều khiển (như: bật,tạm dừng,ấm lượng)
+-loop:lặp lại
+-auto: Tự động phát
+-muted:tắt tiếng
+Thuộc tính thẻ source
+src:đường dẫn file
+type:kiểu video(mp4,ogg,webm)-->
+
+<!--Thẻ audio là thẻ để nhúng audio vào trang web trong thẻ audio có thẻ <source> để chứa đường dẫn file audio
+Thuộc tính thẻ audio
+-controls:Thanh điều khiển (như: bật,tạm dừng,ấm lượng)
+-loop:lặp lại
+-auto: Tự động phát
+-muted:tắt tiếng
+Thuộc tính thẻ source
+src:đường dẫn file
+type:kiểu audio(mpeg-là mp3,ogg,webm,wav)-->
+<!--thẻ table dùng để chèn bẳng vào trang web-->
+<!--<table></table>:Xác định 1 bảng-->
+<!--<thead></thead>:Xác định phần đầu bảng-->
+<!--<tbody></tbody>:Xác định phần thân bảng-->
+<!--<tfoot></tfoot>:Xác định phần chân bảng-->
+<!--<tr></tr>:Xác định 1 hàng trong bảng-->
+<!--<th></th>:Xác định ô tiêu đề trong bảng-->
+<!--<td></td>:Xác định ô dữ liệu trong bảng-->
+<!--<caption></caption>:Xác định tiêu đề bảng-->
+<!--<colgroup></colgroup>:Xác định nhóm cột trong bảng-->
+<!--<col></col>:Xác định cột trong bảng-->
