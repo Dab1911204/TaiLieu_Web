@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box" onclick="console.log(Math.random())" style="padding: 20px;">DOM events onclick</div>
+    <div class="box" onclick="console.log(this)" style="padding: 20px;">DOM events onclick (this)</div><!--this là element đang làm việc-->
+    <div class="box" onclick="console.log(this.innerText)" style="padding: 20px;">DOM events onclick (this.innerText)</div>
+    <div class="box" onclick="console.log(this)" style="padding: 20px;"> <!--xuất hiện sự kiện đổi bọt từ thẻ con đổi bọt đầu tiên nắng nghe thẻ con sau đó đổi bọt ra thẻ cha-->
+        <span onclick="console.log(this)">DOM events onclick</span>
+    </div>
+    <div class="box" onmouseover="console.log(Math.random())" style="padding: 20px;">DOM events onmouseover</div>
+    <div class="box" onmouseout="console.log(Math.random())" style="padding: 20px;">DOM events onmouseout</div>
+    <div class="box" onkeydown="console.log(Math.random())" style="padding: 20px;">DOM events onkeydown</div>
+    <div class="box" onkeyup="console.log(Math.random())" style="padding: 20px;">DOM events onkeyup</div>
+    <div class="box" onkeypress="console.log(Math.random())" style="padding: 20px;">DOM events onkeypress</div>
+
+    <h1>
+        <span>DOM events Assigned onclick </span>
+    </h1>
+    <h2>
+        <span>DOM events Assigned onclick 1</span>
+    </h2>
+    <h2>
+        <span>DOM events Assigned onclick 2</span>
+    </h2>
+    <h2>
+        <span>DOM events Assigned onclick 3</span>
+    </h2>
+    <script src="./main.js"></script>
+</body>
+</html>
+
