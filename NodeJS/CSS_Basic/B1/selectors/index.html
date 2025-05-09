@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Bộ chọn chung */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Bộ chọn element */
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        /* Bộ chọn id */
+        #title_2{
+            color: green;
+        }
+        /* Bộ chọn class */
+        .title_3{
+            color: yellow;
+        }
+        h3,h4,h5,h6{
+            color: orange;
+        }
+        /* Pseudo-class selectors(Bộ chọn lớp giả) */
+        /*hover :Áp dụng khi người dùng di chuột qua một phần tử */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        /*nth-child() :Chọn phần tử dựa trên vị trí của nó trong danh sách con. */
+        li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        li:nth-child(3) {
+            font-weight: bold;
+        }
+        /*focus :Áp dụng khi một phần tử (như input) được chọn hoặc có tiêu điểm.*/
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+        /*first-child và last-child :Chọn phần tử đầu tiên hoặc cuối cùng trong danh sách con. */
+        p:first-child {
+            font-size: 20px;
+        }
+
+        p:last-child {
+            color: green;
+        }
+        /*not() :Chọn các phần tử không khớp với bộ chọn được chỉ định. */
+        div:not(.active) {
+            opacity: 0.5;
+        }
+        /* checked :Áp dụng cho các phần tử được chọn, như checkbox hoặc radio. */
+        input[type="checkbox"]:checked {
+            background-color: yellow;
+        }
+        /* disabled và enabled :Chọn các phần tử bị vô hiệu hóa hoặc khả dụng. */
+        button:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+
+        /*before và after :Thêm nội dung trước hoặc sau phần tử.*/
+        h1:before {
+            content: "★ ";
+            color: gold;
+        }
+
+        h1:after {
+            content: " ★";
+            color: gold;
+        }
+        /* Pseudo-elements selectors(Bộ chọn phần tử giả) */
+        p::before {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        /*Attribute selectors (bộ chọn thuộc tính) */
+        input[name]{
+            background-color: yellow;
+        }
+
+        /* Combinator selectors(Bộ chọn tổ hợp) */
+        /* Adjacent sibling selectors(bộ chọn anh chị em liển kề) */
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <h2>Nội dung 1</h2>
+    <h2 id = "title_2">Nội dung 2</h2>
+    <h2>Nội dung 3</h2>
+    <h2 class="title_3">Nội dung 4</h2>
+    <h2>Nội dung 5</h2>
+    <p>CSS là viết tắt của Cascading Style Sheets</p>
+    <h3>Nội dung 6</h3>
+    <h4>Nội dung 7</h4>
+    <h5>Nội dung 8</h5>
+    <h6>Nội dung 9</h6>
+    <input type="text" name="text">
+</body>
+</html>
+<!-- 
+selectors(bộ chọn):-Chọn ra các phần tử HTML mà bạn muốn tạo kiểu 
+                   -Bộ chọn đc chia thành 5 bộ:+Simple Selectors (Bộ chọn đơn giản)
+                                               +Combinator selectors(Bộ chọn tổ hợp)
+                                               +Pseudo-class selectors(Bộ chọn lớp giả):VD hover,nth-child(),focus,first-child,last-child,not(),checked,disabled,enabled,...
+                                               +Pseudo-elements selectors(Bộ chọn phần tử giả)
+                                               +Attribute selectors (bộ chọn thuộc tính)
+
+-->
+<!-- 
+Simple Selectors
+-Bộ chọn element:chọn tên phần tử
+-Bộ chọn id:Chọn các phần tử dựa trên thuộc tính id
+-Bộ chọn class:Chọn các phần tử dựa trên thuộc tính class
+-Bộ chọn chung:chọn tất cả các phần tử
+-Bộ chọn nhóm: chọn tất cả các phần tử,id,class có cùng thuộc tính và giá trị thuộc tính
+-->

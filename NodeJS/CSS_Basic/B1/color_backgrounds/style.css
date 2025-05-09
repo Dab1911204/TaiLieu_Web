@@ -1,0 +1,14 @@
+/*
+Colors:có 2 cách sử dụng là:
+-đặt tên sẳn:while,black,red,green,...
+-HEX:Cú pháp:RRGGBB
+    +trong đó:RR là red GG là green BB là blue
+    +vd:#000000,#ffffff
+Backgrond(màu nền)
+*/
+h1{
+    color: #000;
+}
+h2{
+    background-color: aliceblue ;
+}

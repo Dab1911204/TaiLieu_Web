@@ -1,0 +1,5 @@
+.box{
+    border: 5px solid black;
+    padding: 50px 30px 40px 60px;/*cách viết tắt lần lượt là bên trên,bên phải,bên dưới,bên trái*/
+    margin-bottom: 50px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* chọn ra thẻ p liền kề và cùng cấp với thẻ div */
+        /* div + p{ 
+            color: red;
+        } */
+        /* chọn ra thẻ p phía sau và cùng cấp với thẻ div */
+        /* div ~ p{ 
+            color: red;
+        } */
+        /* chọn tất cả các phần tử p là cấp con đầu tiên của thẻ div */
+        /* div > p{ 
+            color: red;
+        } */
+        /* chọn tất cả thẻ p trong thẻ div */
+        div p{ 
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Nội dung 1</p>
+    <div>
+        <p>nội dung 2</p>
+        <p>nội dung 3</p>
+        <section>
+            <p>nội dung section 1</p>
+            <p>nội dung section 2</p>
+
+            <article>
+                <p>Nội dung article 1</p>
+                <p>Nội dung article 2</p>
+            </article>
+        </section>
+    </div>
+    <p>Nội dung 4</p>
+    <h2>Nội dung thẻ h2</h2>
+    <p>Nội dung 5</p>
+    <p>Nội dung 6</p>
+</body>
+</html>

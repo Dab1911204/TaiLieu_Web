@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORM</h1>
+    <!--Là 1 biểu mẫu đc sử dụng để thu thập thông tin-->
+    <form action="https://www.w3schools.com/action_page.php" method="GET" target="_blank" autocomplete="on"
+        novalidate="on">
+        <label for="name">Họ tên:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <input type="submit" value="Gửi">
+    </form>
+</body>
+
+</html>
+<!--
+action:-thuộc tính của form:+Giá trị là 1 đg dẫn.(để xác định nơi nhận giá trị khi gửi)
+target:-Chỉ định nơi hiển thị sau khi phản hồi
+       -target="_self":mặc định.Phản hồi hiển thị ở tab hiện tại
+       -target="_blank":Phản hồi hiển thị ở tab mới
+method:-Chỉ định giao thức HTTP sẽ đc sử dụng khi gửi dữ liệu biểu mẫu
+       -có 2 phương thức:GET và POST
+       -Phương thức GET:+nối dữ liệu biểu mẫu vào URL,theo cặp thuộc tính name/value.
+                        +Không bao h sử dụng get để gửi dữ liệu bảo mật
+                        +Độ dài của URL bị giới hạn(2048 ký tự)
+       -Phương thức POST:+Dữ liệu gửi đi ko hiển thị trên URL
+                         +Không có giới hạn về kịch thước.
+                         +Có thể đc sử dụng để gửi 1 dữ liệu lớn.
+autocomplete:-Tính năng tự động điền.
+             -Trình duyệt sẽ gợi ý các giá trị mà người dùng đã nhập trước đó.
+novalidate:Ko cần phải kiểm tra tính chính xác của dữ liệu gửi đi 
+-->
+<!--
+<input>:-hiển thị theo nhiều cách,theo thuộc tính type
+        -mặc định sẽ là type = "text"
+        -Các kiểu type:-text:nhập đoạn văn ngắn
+                       -email:nhập email
+                       -number:nhập số
+                       -password:nhập password
+                       -date:nhập ngày
+                       -time:nhập giờ 
+                       -datetime-local:nhập ngày,giờ
+                       -file:để tải file lên
+                       -check:cho phép người dùng chọn nhiều tùy chọn
+                       -radio:cho phép người dùng chọn 1 trong số các lựa chọn
+<lable>:-xác định biểu mẫu cho element trong biểu mẫu
+        -Để người dùng hiểu hơn về element đó
+        -Thuộc tính for của thẻ <lable> phải bằng với thuộc tính id của element để liên kết cũng với nhau
+<select>:-Hiển thị dạng danh sách thả xuống
+         -các thẻ <option> là các tùy chọn người dùng có thể chọn.
+         -Để thay đổi lựa chọn mặc định thì thêm thuộc tính select vào <option> muốn chọn mặc định
+<textarea>:dùng để nhập nhiều dòng 
+-->

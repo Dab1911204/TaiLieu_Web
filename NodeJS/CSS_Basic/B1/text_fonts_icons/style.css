@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');/*Nhúng font vào*/
+.text-1{
+    font-family: "Tagesschrift", system-ui;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+.text-2{
+    text-align: left;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.text-3{
+    text-align: right;
+    text-transform: lowercase;
+    font-style: italic;
+}
+.text-4{
+    text-align: justify;
+}
