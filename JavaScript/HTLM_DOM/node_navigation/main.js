@@ -1,0 +1,5 @@
+const child1 = document.querySelector("#child1")
+console.log(child1)
+console.log(child1.parentNode)
+console.log(child1.childNodes)
+console.log(child1.querySelectorAll(".box"))

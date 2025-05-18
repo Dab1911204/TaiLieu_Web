@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+</head>
+<body>
+    <ul class="menu">
+        <li>Home <button>X</button></li>
+        <li>About <button>X</button></li>
+        <li>Contact <button>X</button></li>
+    </ul>
+    <button id="button">Add</button>
+    <button id="button_change">Change</button>
+    <script>
+        // const div = document.createElement('div')
+        // // div.innerText = 'DOM Nodes'
+        // const text = document.createTextNode('DOM Nodes')
+        // div.appendChild(text)//thêm thẻ text vừa mới tạo vào trong thẻ div
+        // document.querySelector('body').appendChild(div)//thêm thẻ div vừa mới tạo vào trong thẻ body
+        const button = document.getElementById('button')
+        const menu = document.querySelector('.menu')
+        const liFirst = document.querySelector('li:nth-child(1)')
+
+        let count = 1
+        button.addEventListener('click', () => {
+            const li = document.createElement('li')
+            const createButton = document.createElement('button')
+            createButton.innerText = 'X'
+            li.innerText = 'New Item ' + count 
+            // menu.appendChild(li)
+            menu.insertBefore(li, liFirst)
+            li.appendChild(createButton)
+            count++
+        })
+        const buttonDeletes = menu.querySelectorAll('button')
+        for(const buttonDelete of buttonDeletes){
+            buttonDelete.addEventListener('click', (e) => {
+                const li = e.target.parentElement
+                menu.removeChild(li)    
+            })
+        }
+
+
+        const button_change = document.getElementById('button_change')
+        button_change.addEventListener('click', () => {
+            const liSecond = menu.querySelector('li:nth-child(2)')
+            const li = document.createElement('li')
+            const createButton = document.createElement('button')
+            createButton.innerText = 'X'
+            li.innerText = 'New Item ' + count 
+            // menu.appendChild(li)
+            menu.replaceChild(li, liSecond)
+            li.appendChild(createButton)
+            count++
+        })
+        
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+npm init:để tạo ra project cho nodejs
+npm install express:Cài thư viên express
+npm install -g nodemon:cài nodemon để khi có sử thay đổi nó sẽ tự động cập nhật cho server
+npm install nodemon --save-dev:cài trên devDependencies
+npm install morgan :giúp có thể theo dõi đc các requet trên console.log ở terminal
+npm install morgan --save-dev:cài trên devDependencies
+Template engine(handlebars):giúp viết ra những file chứ mã html gọn hơn và có thể đc hiệu quả hơn để sử dụng trong html
+npm install express-handlebars:cài đặt handlebars

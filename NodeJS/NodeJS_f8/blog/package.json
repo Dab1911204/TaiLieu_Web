@@ -1,0 +1,31 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dab1911204/Nodejs_tuhoc1.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "anh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dab1911204/Nodejs_tuhoc1/issues"
+  },
+  "homepage": "https://github.com/Dab1911204/Nodejs_tuhoc1#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10"
+  }
+}

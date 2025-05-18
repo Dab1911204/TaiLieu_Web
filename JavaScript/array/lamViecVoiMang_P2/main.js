@@ -1,4 +1,16 @@
+//forEach((currentValue,index,array) =>{...})
+//every((currentValue,index,array) =>{...})
+//some((currentValue,index,array) =>{...})
+//find((currentValue,index,array) =>{...})
+//filter((currentValue,index,array) =>{...})
+//map((currentValue,index,array) =>{...})
+//reduce((accumulator,currentValue,index,array) =>{...},initialValue)
 
+//currentValue:phần tử hiện tại đang xử lý
+//index:chỉ số của phần tử
+//array:mảng hiện tại đang gọi hàm
+//accumulator:giá trị của lệnh return sau mỗi lần lặp
+//initialValue:Giá trị khởi tạo ban đầu (không bắt buộc)
 
 let courses = [
     {

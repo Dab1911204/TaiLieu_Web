@@ -42,3 +42,13 @@ for (var value of Object.keys(languages)) {
 for (var value of Object.values(languages)) {
     console.log(value);
 }
+
+var myInfo = {
+        name: 'Nguyen Van A',
+        age: 20,
+        address: 'Ha Noi',
+ };
+ for(var value in myInfo){
+    console.log(value);
+    console.log(myInfo[value]);
+ }

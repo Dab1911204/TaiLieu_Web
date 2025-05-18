@@ -9,8 +9,9 @@
             return this.name;
         }
  };
- var myGender = 'gender'
- //cách 1
+var myGender = 'gender'
+//Thêm 1 hey mới vào object
+//cách 1
 myInfo.email = 'nguyenducanhpx2004@gmail.com';
 //cách 2
 myInfo['phone'] = '0123456789';
