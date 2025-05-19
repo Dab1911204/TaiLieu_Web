@@ -1,0 +1,22 @@
+<div class="search-from mt-4">
+    <form method="post" action="">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Từ khóa</label>
+            <input type="text" name="q" class="form-control" id="exampleInputEmail1" placeholder="Nhập từ khóa...">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Từ khóa</label>
+            <select name="gender" class="form-control" id="exampleInputEmail1" placeholder="Nhập từ khóa...">
+                <option value="">-- Chọn giới tính --</option>
+                <option value="male">Nam</option>
+                <option value="female">Nữ</option>
+                <option value="other">Khác</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+        {{!-- hành vi mặc đinh của from khi ấn nút submit sẽ là phương thức get thì nó sẽ đính tất cả các thẻ input có name trong from lên trên url
+        gán vào paramters của url có tên tương ứng với name --}}
+        {{!-- khi đc chuyển trang với phương thức post thì f5(reload) lại bao lần đi nữa thì vẫn sẽ nhận đc phương thức post --}}
+        {{!-- method để thay đổi phương thức,action để thay đổi đường dẫn nếu để trống thì nó sẽ là url hiện tại đang ở--}}
+    </form>
+</div>
