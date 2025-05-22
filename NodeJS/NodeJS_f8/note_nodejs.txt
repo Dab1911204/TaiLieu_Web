@@ -12,3 +12,10 @@ sass src/resources/scss:src/public/css --watch:option watch nó sẽ theo dõi t
 *cấu trúc của url
 https://www.bing.com/search?q=nguyenducanh
 tham số đầu tiên sau url sẽ đc gọi là parameters sau dấu ? sẽ là parameter đầu tiên từ parameter thứ 2 sẽ là dấu &
+
+*cấu hình Prettier formatter khi các thành viên ko theo rule đã đặt ra trước
+-Lint-staged:giúp chạy 1 cmd trên những file đc add vào git và phải match với những file đc chỉ định
+-husky:cung cấp cho 1 cái hook để bắt đc các action khi dùng lệnh chẳng hạn như add,commit,... và sẽ tự động chạy lệnh formatter khi thực thi action
+npm i prettier lint-staged husky:cài đặt 3 thư viện trên
+-tìm và đọc doc để xem các sử dụng
+-sau khi config lint-staged trong package.json thì t có thể thay thế đoạn option sử dụng prettier "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,scss,json}" thành lint-staged

@@ -1,8 +1,8 @@
-const newsRoutes = require('./news')
-const siteRoutes = require('./site')
+const newsRoutes = require('./news');
+const siteRoutes = require('./site');
 function route(app) {
-    app.use('/news', newsRoutes)
-    app.use('/', siteRoutes)//lưu ý những thằng '/' phải đưa xuống dưới ko nó sẽ bị match vào những routes khác
+    app.use('/news', newsRoutes);
+    app.use('/', siteRoutes); //lưu ý những thằng '/' phải đưa xuống dưới ko nó sẽ bị match vào những routes khác
 }
 module.exports = route;
 
@@ -18,7 +18,7 @@ module.exports = route;
 //     })
 //     app.get('/search', (req, res) => {
 //         //console.log(req.query.q);//với phương thức get thì có thể dùng query parameters để chuyền dữ liệu(bởi đây là cách chuyền dữ liệu dễ nhất của get)
-//         //thường thì phương thức get sẽ đc gửi đi dưới dạng query parameters  
+//         //thường thì phương thức get sẽ đc gửi đi dưới dạng query parameters
 //         return res.render('search')
 //     })
 
