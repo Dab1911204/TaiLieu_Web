@@ -19,3 +19,8 @@ tham số đầu tiên sau url sẽ đc gọi là parameters sau dấu ? sẽ l�
 npm i prettier lint-staged husky:cài đặt 3 thư viện trên
 -tìm và đọc doc để xem các sử dụng
 -sau khi config lint-staged trong package.json thì t có thể thay thế đoạn option sử dụng prettier "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,scss,json}" thành lint-staged
+
+*MongoDB
+-mongoose:đứng giữ nodejs và MongoDB để giúp dùng nodejs làm việc vs MongoDB dễ dàng và chặt chẽ hơn(vi trong document database(như là MongoDB) nó có thể tạo ra 2 document ko cùng format )
+
+npm install mongoose-slug-updater:Tự động tạo slug
