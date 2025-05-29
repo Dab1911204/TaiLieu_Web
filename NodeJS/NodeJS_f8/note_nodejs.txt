@@ -24,3 +24,6 @@ npm i prettier lint-staged husky:cài đặt 3 thư viện trên
 -mongoose:đứng giữ nodejs và MongoDB để giúp dùng nodejs làm việc vs MongoDB dễ dàng và chặt chẽ hơn(vi trong document database(như là MongoDB) nó có thể tạo ra 2 document ko cùng format )
 
 npm install mongoose-slug-updater:Tự động tạo slug
+
+npm install method-override:giúp server nhận phương thứ là post nhưng lại có thể thành put
+npm install mongoose-delete:

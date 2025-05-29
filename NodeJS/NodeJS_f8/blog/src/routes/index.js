@@ -1,9 +1,11 @@
 const newsRoutes = require('./news');
+const meRoutes = require('./me');
 const siteRoutes = require('./site');
 const coursesRoutes = require('./courses');
 function route(app) {
     app.use('/news', newsRoutes);
-    app.use('/courses', coursesRoutes); //lưu ý những thằng '/' phải đưa xuống dưới ko nó sẽ bị match vào những routes khác
+    app.use('/me', meRoutes); 
+    app.use('/courses', coursesRoutes); 
     app.use('/', siteRoutes); //lưu ý những thằng '/' phải đưa xuống dưới ko nó sẽ bị match vào những routes khác
 }
 module.exports = route;

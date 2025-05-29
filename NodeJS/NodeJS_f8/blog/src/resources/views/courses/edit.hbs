@@ -1,0 +1,31 @@
+<div class="mt-4">
+    <h3>sửa khóa học</h3>
+
+    <form class="mt-4" action="/courses/{{course._id}}?_method=PUT" method="POST">{{!Do hiện này submit của form chưa sp đc submit trên method PUT nên để method PUT cũng thành GET nên ta sẽ dùng method POST}}
+        <div class="mb-3">
+            <label for="name" class="form-label">Tên khóa học</label>
+            <input type="text" class="form-control" value="{{course.name}}" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="videoId" class="form-label">Video ID</label>
+            <input type="text" class="form-control" value="{{course.videoId}}" id="videoId" name="videoId">
+        </div>
+        <div class="mb-3">
+            <label for="discription" class="form-label">Mô tả</label>
+            <textarea class="form-control" id="discription" name="discription" rows="3">{{course.discription}}</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="level" class="form-label">Cấp độ</label>
+            <select class="form-select" value="{{course.level}}" id="level" name="level">
+                <option value="">Chọn cấp độ</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu khóa học</button>
+    </form>
+    <script>
+        document.querySelector('select[name="level"]').value = "{{course.level}}";
+    </script>
+</div>

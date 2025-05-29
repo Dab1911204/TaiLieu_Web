@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 var slug = require('mongoose-slug-updater'); // sử dụng plugin slug để tạo slug từ trường name
+const  MongooseDelete = require('mongoose-delete')
 
-mongoose.plugin(slug); // đăng ký plugin slug để sử dụng slug trong schema
 
 const Schema = mongoose.Schema;
 
@@ -15,5 +15,8 @@ const Course = new Schema({
 },{
     timestamps: true,//thêm 2 trường createdAt và updatedAt
 });
+
+mongoose.plugin(slug); // đăng ký plugin slug để sử dụng slug trong schema
+Course.plugin(MongooseDelete,{overrideMethods: 'all',deletedAt: true});// sử dụng plugin MongooseDelete để xóa mềm dữ liệu, overrideMethods: 'all' sẽ cho
 
 module.exports = mongoose.model('Course', Course);
