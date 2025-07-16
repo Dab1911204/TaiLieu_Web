@@ -1,12 +1,12 @@
-//Destructuring
+//Destructuring(giải nén mảng): lấy các phần tử trong mảng ra thành các biến
 var array = ['java', 'python', 'c++', 'javascript'];
-var [a,b,c,d] = array; // Destructuring
+var [a,b,c,d] = array; // Destructuring 
 console.log(a,b,c,d);
 var [x, ,y] = array;
 console.log(x,y); // Skip second element
 //Rest:khi sử dụng cùng với destructuring thì sẽ là rest operator
 var array1 = ['java', 'python', 'c++', 'javascript'];
-var [a1, ...rest] = array1; // ... rest operator
+var [a1, ...rest] = array1; // ... rest operator(toán tử rest): lấy tất cả các phần tử còn lại
 console.log(a1); // java
 console.log(rest); // [ 'python', 'c++', 'javascript' ]
 
@@ -30,7 +30,7 @@ var course1 = {
 }
 var {name, ...newObject} = course1; // ... rest operator:lấy tất cả các thuộc tính còn lại
 console.log(name);
-console.log(rest1); // { price: 1000, Image: 'image-address' } 
+console.log(newObject); // { price: 1000, Image: 'image-address' } 
 
 var {name, children: {name: name1}} = course1; // Destructuring
 console.log(name, name1); // JavaScript ReactJS
@@ -63,8 +63,9 @@ loggerObj({
     price: 1000,
     description: 'description',
 });
-function loggerArray([a,b,...params]){ 
+function loggerArray([a,b,...params]){ // [a,b] là các tham số đầu tiên, ...params là các tham số còn lại ...params là rest parameter
     console.log(params);// [ 3, 4 ]
 }
 
 loggerArray([1,2,3,4]); // [ 3, 4 ]
+//rest parameter: là một tham số đặc biệt trong hàm, nó cho phép bạn truyền một số lượng không xác định các đối số vào hàm và nhóm chúng thành một mảng.

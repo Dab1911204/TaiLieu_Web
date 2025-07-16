@@ -7,7 +7,7 @@ var methodOverride = require('method-override')
 const mongoose = require('mongoose');
 
 const app = express();
-const port = 3000;
+const port = 3001;
 const db = require('./config/db');
 //connect to db
 db.connectDB();

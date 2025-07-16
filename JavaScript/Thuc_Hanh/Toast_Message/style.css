@@ -70,90 +70,72 @@
 }
 
   
-  .toast{
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 2px;
-    min-width: 400px;
-    max-width: 450px;
-    border-left: 4px solid;
-    box-shadow: 0 5px 8px rgba(0,0,0,0.08);
-    padding: 20px 0;
-    transition: all linear 0.3s;
-  }
-  @keyframes slideInLeft {
-    from{
-        opacity: 0;
-        transform: translateX(calc(100% + 32px));
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-  }
-  @keyframes fadeOut {
-    to{
-        opacity: 0;
-        transform: translateX(calc(100% + 32px));
-    }
-  }
-  #toast{
-    position: fixed;
-    top: 32px;
-    right: 32px;
-  }
-  .toast + .toast{
-    margin-top: 24px;;
-  }
-  .toast__icon{
-    font-size: 24px;
-  }
-  .toast__icon,
-  .toast__close{
-    padding: 0 16px;
-  }
-  .toast__body{
-    flex-grow: 1;
-  }
-  .toast__title{
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-  }
-  .toast__msg{
-    font-size: 14px;
-    margin-top: 6px;
-    color: #888;
-    line-height: 1.5;
-  }
-  .toast__close{
-    font-size: 20px;
-    color: rgba(0,0,0,0.3);
-    cursor: pointer;
-  }
+.toast-container-custom {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
 
-  .toast--success{
-    border-color: #47d864;
-  }
-  .toast--success .toast__icon{
-    color: #47d864;
-  }
-  .toast--info{
-    border-color: #2f86eb;
-  }
-  .toast--info .toast__icon{
-    color: #2f86eb;
-  }
-  .toast--warning{
-    border-color: #ffc021;
-  }
-  .toast--warning .toast__icon{
-    color: #ffc021;
-  }
-  .toast--error{
-    border-color: #ff623d;
-  }
-  .toast--error .toast__icon{
-    color: #ff623d;
-  }
+.toast-custom {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-left: 4px solid #47d864; /* Màu loại toast */
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  min-width: 350px;
+  max-width: 400px;
+  animation: slideIn .3s ease, fadeOut 1s ease forwards;
+  animation-delay: 0s, 3s;
+}
+
+.toast-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #47d864;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.toast-content {
+  flex: 1;
+}
+
+.toast-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.toast-message {
+  font-size: 14px;
+  color: #888;
+}
+
+.toast-close {
+  margin-left: 12px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.toast-close:hover {
+  color: #555;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateX(100%); }
+}
